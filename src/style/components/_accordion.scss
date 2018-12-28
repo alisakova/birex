@@ -2,12 +2,12 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-top: 24px;
+  position: absolute;
+  z-index: 10;
+  // margin-top: 24px;
   // min-height: 0;
   @media (min-width: 601px) {
     display: none;
-    position: absolute;
-    z-index: 10;
     left: calc(100% - 5px);
     bottom: rem(21);
     width: rem(350);
@@ -38,5 +38,10 @@
       border-color: transparent $border-color transparent transparent;
       border-width: 11px;
     }
+  }
+  @media (max-width: 600px) {
+    top: calc(100% + 24px);
+    width: 100%;
+    left: 0;
   }
 }
