@@ -1,0 +1,20 @@
+-
+  var features = [
+    "Качественная натуральная кожа",
+    "Контроль строчек и&nbsp;швов",
+    "Ручная работа и&nbsp;технологии",
+    "100% Италия",
+    "Авторские коллекции от дизайнеров",
+    "Эргономика и эстетика"
+  ]
+
+section(id="features").features
+  +title("Преимущества")
+  .container
+    .features__items 
+      for item, index in features
+        .features__item
+          .features__icon
+            img(src="img/features/feature-" + index + ".svg", alt="Преимущество")
+          .features__descr!= item
+          

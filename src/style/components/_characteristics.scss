@@ -1,0 +1,37 @@
+.characteristics {
+  padding: rem(16 25 11);
+  @media (max-width: 600px) {
+    padding: 33px 41px 58px;
+    background: $border-color;
+  }
+  @media (max-width: 370px) {
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
+  }
+}
+
+.characteristics__title {
+  padding-bottom: rem(18);
+  margin-bottom: rem(18);
+  border-bottom: 1px solid $border-color;
+}
+
+.characteristics__subtitle {
+  &_margin-bottom {
+    margin-bottom: rem(22);
+  }
+}
+
+.characteristics__delivery {
+  margin-bottom: rem(22);
+}
+
+.characteristics__types-container {
+  margin-bottom: rem(23);
+}
+
+.characteristics__text {
+  font-weight: 300;
+}

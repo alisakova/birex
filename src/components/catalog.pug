@@ -1,0 +1,64 @@
+-
+  var catalogDatas = [
+    {
+      "name": "Серия диванов  Alfred",
+      "price": "540 000",
+      "img": "alfred.jpg",
+      "subtitle": "Современный стиль. Модель Alfred",
+      "scheme": "alfred-scheme.svg",
+      "size": "180 / 200 /  220 / 240",
+      "materials": "натуральная кожа, стерилизованный гусиный пух, синтетический наполнитель, дерево, хромиорванная сталь"
+    },
+    {
+      "name": "Серия диванов Boheme",
+      "price": "740 000",
+      "img": "boheme.jpg",
+      "subtitle": "Современный стиль. Модель Boheme",
+      "scheme": "boheme-scheme.svg",
+      "size": "182 /  202 / 222 / 242 / 300",
+      "materials": "натуральная кожа или ткань, стерилизованный гусиный пух, синтетический наполнитель, дерево, хромиорванная сталь"
+    },
+    {
+      "name": "Серия диванов Nabucco",
+      "price": "940 000",
+      "img": "nabucco.jpg",
+      "subtitle": "Современный стиль. Модель  Nabucco",
+      "scheme": "nabucco-scheme.svg",
+      "size": "180 /  220 / 240",
+      "materials": "натуральная кожа или ткань, стерилизованный гусиный пух, синтетический наполнитель, дерево."
+    },
+    {
+      "name": "Серия диванов Rigoletto",
+      "price": "750 000",
+      "img": "rigoletto.jpg",
+      "subtitle": "Классический стиль. Модель Olympia",
+      "scheme": "rigoletto-scheme.svg",
+      "size": "220 /  240 / 257",
+      "materials": "натуральная кожа или ткань, стерилизованный гусиный пух, синтетический наполнитель, дерево."
+    },
+    {
+      "name": "Серия диванов Otello",
+      "price": "850 000",
+      "img": "otello.jpg",
+      "subtitle": "Современный стиль. Модель Otello",
+      "scheme": "otello-scheme.svg",
+      "size": "187 /  207 / 227 / 287",
+      "materials": "натуральная кожа или ткань, терилизованный гусиный пух, синтетический наполнитель, дерево, хромированная сталь"
+    },
+    {
+      "name": "Серия диванов Opera",
+      "price": "450 000",
+      "img": "opera.jpg",
+      "subtitle": "Современный стиль. Модель Opera",
+      "scheme": "opera-scheme.svg",
+      "size": "187 / 207 / 227 / 287",
+      "materials": "натуральная кожа или ткань, стерилизованный гусиный пух, синтетический наполнитель, дерево, хромированная сталь"
+    }
+  ]
+
+section(id="catalog").catalog
+  +title("Стоимость диванов")
+  .container
+    .catalog__container
+      for item in catalogDatas
+        +product(item)
