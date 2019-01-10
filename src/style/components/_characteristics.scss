@@ -66,6 +66,10 @@ $types-colors: (
   &_color-FFFFFF {
     border: 1px solid $main-font-color;
   }
+  &_color-example {
+    background: url("../img/catalog/color-example.jpg") center center no-repeat;
+    background-size: cover;
+  }
 }
 
 .characteristics__text {

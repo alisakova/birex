@@ -27,9 +27,10 @@
 
 .contacts__container {
   position: relative;
-  background: url("../img/contacts-img.jpg") no-repeat 60% center;
+  background: url("../img/contacts-img.jpg") no-repeat center center;
+  background-size: cover;
   @media (max-width: 769px) {
-    background-position: left center;
+    background: none;
   }
 }
 
